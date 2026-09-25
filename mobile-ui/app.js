@@ -1,4 +1,4 @@
-const ws = new WebSocket(`ws://${window.location.hostname}:8080`);
+const WS_URL = "https://core-remote-relay.onrender.com"; // Replace with your exact Render domain
 const SECRET_TOKEN = "DHANANJAY_CYBER_KEY_99";
 
 const statusDot = document.getElementById('status-dot');
