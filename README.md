@@ -8,7 +8,6 @@ Featuring a cyberpunk-themed mobile interface, an online Node.js relay bridge, a
 
 ## 🏗️ Architecture
 
-```text
   [ Mobile Deck (Netlify UI) ]
                │
                │ (HTTPS / WSS)
@@ -17,5 +16,31 @@ Featuring a cyberpunk-themed mobile interface, an online Node.js relay bridge, a
    (Node.js WebSocket Server)
                ▲
                │ (WSS)
-               │
+               │  
    [ Laptop Agent (Python / Windows) ]
+
+   ---
+
+🔥 Features
+🔐 Master Security PIN: Client-side authentication layer protecting against unauthorized endpoint calls.
+
+🔒 Instant Workstation Lock: Low-level OS call via ctypes.windll.user32.LockWorkStation().
+
+🚀 Quick App Launcher: Asynchronous execution (subprocess.Popen) for daily tools like VS Code, Chrome, Spotify, and Task Manager.
+
+🌍 Global Reach: Secure WebSocket protocol (wss://) enabling control over cellular data anywhere in the world.
+
+---
+
+🛠️ Project Structure
+Plaintext
+laptop-remote/
+├── agent/
+│   └── listener.py       # Python desktop execution agent
+├── server/
+│   ├── package.json      # Node.js dependencies
+│   └── index.js          # Cloud WebSocket relay bridge
+└── mobile-ui/
+    ├── index.html        # Cyberpunk control deck layout
+    ├── style.css         # Styling & responsive design
+    └── app.js            # Client WebSocket logic & security check
