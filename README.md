@@ -7,7 +7,7 @@ Featuring a cyberpunk-themed mobile interface, an online Node.js relay bridge, a
 ---
 
 ## 🏗️ Architecture
-
+```text
   [ Mobile Deck (Netlify UI) ]
                │
                │ (HTTPS / WSS)
@@ -18,7 +18,7 @@ Featuring a cyberpunk-themed mobile interface, an online Node.js relay bridge, a
                │ (WSS)
                │  
    [ Laptop Agent (Python / Windows) ]
-
+```
    ---
 
 🔥 Features
@@ -33,7 +33,7 @@ Featuring a cyberpunk-themed mobile interface, an online Node.js relay bridge, a
 ---
 
 🛠️ Project Structure
-Plaintext
+```
 laptop-remote/
 ├── agent/
 │   └── listener.py       # Python desktop execution agent
