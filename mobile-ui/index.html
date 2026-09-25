@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CYBER-LINK // LAPTOP REMOTE</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="cyber-card">
+    <div class="card-header">
+      <div class="pulse-dot" id="status-dot"></div>
+      <span class="status-text" id="status-text">CONNECTING...</span>
+    </div>
+
+    <h1 class="title">CORE REMOTE</h1>
+    <p class="subtitle">TARGET: LAPTOP-MAIN // WIN11</p>
+
+    <div class="pin-container">
+      <label for="pin-input">SYSTEM PASSCODE / PIN</label>
+      <input type="password" id="pin-input" value="1234" maxlength="8" placeholder="ENTER PIN" />
+    </div>
+
+    <div class="button-group">
+      <button class="btn btn-lock" id="lock-btn">
+        <span class="icon">🔒</span> LOCK PC
+      </button>
+      <button class="btn btn-unlock" id="unlock-btn">
+        <span class="icon">🔓</span> UNLOCK PC
+      </button>
+    </div>
+
+    <div class="log-box" id="log-box">
+      > SYSTEM READY. AWAITING USER INPUT...
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
